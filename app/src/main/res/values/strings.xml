@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="car_price">Car Price</string>
+    <string name="down_payment">Down Payment</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="loan_period">Loan Period</string>
+    <string name="textview">TextView</string>
+    <string name="calculate">Calculate</string>
+</resources>
