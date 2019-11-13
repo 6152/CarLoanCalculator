@@ -72,61 +72,44 @@
 
     <TextView
         android:id="@+id/car_loan"
-        android:layout_width="158dp"
-        android:layout_height="68dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="136dp"
         android:text="Car Loan"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/interest"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/interest"
         app:layout_constraintTop_toBottomOf="@+id/editText13" />
 
     <TextView
-        android:id="@+id/interest"
-        android:layout_width="152dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Interest"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/car_loan" />
+        android:id="@+id/monthly_repayment"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Monthly Repayment"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/interest"
+        tools:layout_editor_absoluteX="77dp" />
 
     <TextView
-        android:id="@+id/monthly_repayment"
-        android:layout_width="153dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Monthly Repayment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/interest" />
+        android:id="@+id/interest"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:text="Interest"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/monthly_repayment"
+        app:layout_constraintStart_toStartOf="@+id/monthly_repayment"
+        app:layout_constraintTop_toBottomOf="@+id/car_loan" />
 
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="440dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:text="@string/calculate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
-        app:layout_constraintStart_toEndOf="@+id/monthly_repayment"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="285dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
